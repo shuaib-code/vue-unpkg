@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue + Tailwind User Cards</title>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-200 text-gray-800">
+    <div id="app" class="max-w-6xl mx-auto p-6">
+      <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">
+        Word List
+      </h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <user-card
+          v-for="user in users"
+          :key="user.id"
+          :user="user"
+        ></user-card>
+      </div>
+    </div>
+  </body>
+  <script>
+    Vue.createApp(app).mount("#app");
+  </script>
+</html>
