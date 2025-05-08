@@ -1,3 +1,5 @@
+[![Vue Unpkg](https://raw.githubusercontent.com/shuaib-code/vue-unpkg/refs/heads/main/public/social.png)](https://vuejs.org/)\
+
 # Learning Vue.js with CDN
 
 This simple project demonstrates the basics of using Vue.js by directly including it in an HTML file via a Content Delivery Network (CDN). This approach is excellent for quick prototyping, learning the core concepts of Vue, or embedding small Vue components into existing static websites without a complex build process.
