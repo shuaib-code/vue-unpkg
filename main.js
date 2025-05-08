@@ -6,11 +6,11 @@ const UserCard = {
       <h2 class="text-2xl font-bold mb-2 hover:text-primary">{{ user.word }}</h2>
 
       <p class=" mb-2">
-        <strong class="text-primary">Meaning:</strong> {{ user.meaning }}
+        <strong class="text-primary">Meaning:</strong> <span class="bn">{{ user.meaning }}</span>
       </p>
 
       <div class="flex items-center space-x-2 mb-2">
-        <p ><strong>Pronunciation:</strong> {{ user.pronunciation }}</p>
+        <p ><strong>Pronunciation:</strong>  <span class="bn">{{ user.pronunciation }}</span></p>
       </div>
       
     </div>

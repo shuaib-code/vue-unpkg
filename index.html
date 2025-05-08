@@ -8,6 +8,14 @@
     <script src="./main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Bengali:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <!-- Tailwind Config -->
@@ -22,7 +30,6 @@
               secondary: "#e397ad",
               accent: "#e45c84",
             },
-
             fontSize: {
               sm: "0.750rem",
               base: "1rem",
@@ -36,6 +43,18 @@
         },
       };
     </script>
+    <style>
+      body {
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+      }
+      .bn {
+        font-family: "Noto Serif Bengali", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-variation-settings: "wdth" 100;
+      }
+    </style>
   </head>
   <body class="bg-background text-text">
     <div id="app" class="max-w-6xl mx-auto p-6">
