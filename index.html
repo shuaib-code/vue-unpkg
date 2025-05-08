@@ -8,10 +8,37 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#140f10",
+              background: "#f8f3f4",
+              primary: "#bc5a76",
+              secondary: "#e397ad",
+              accent: "#e45c84",
+            },
+
+            fontSize: {
+              sm: "0.750rem",
+              base: "1rem",
+              xl: "1.333rem",
+              "2xl": "1.777rem",
+              "3xl": "2.369rem",
+              "4xl": "3.158rem",
+              "5xl": "4.210rem",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-slate-200 text-gray-800">
+  <body class="bg-background text-text">
     <div id="app" class="max-w-6xl mx-auto p-6">
-      <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">
+      <h1 class="text-3xl font-bold mb-8 text-center text-primary">
         Word List
       </h1>
 
